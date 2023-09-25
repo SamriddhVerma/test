@@ -2,28 +2,33 @@
 <html>
 
 <head>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>replit</title>
+  <title>Dharti</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <div class="main" id="main">
-    <div class="header" id="header">
-      <a href="login.html" class="headele">
-        Login
-      </a>
-      <a href="vision.html" class="headele">
-        Our Vision
-      </a>
-      <button class="headele" onclick="contactus()">
-        Contact us
-      </button>
-      <a class="headele">
-        Rate us
-      </a>
+    <div class="navbar" id="navbar">
+      <a class="logo" href="index.html"></a>
+      <div style="display: flex;">
+        <button class="navbar-elements center" onclick="contactus()">
+          Contact us
+        </button>
+        <a class="navbar-elements">
+          Rate us
+        </a>
+        <a href="vision.html" class="navbar-elements">
+          Our Vision
+        </a>
+        <a href="login.html" class="navbar-elements">
+          Login
+        </a>
+      </div>
     </div>
+    <button class="idk hidden" id="idk" onclick="contactus()"></button>
     <div id="contact" class="hidden">
 
       <div class="contactus">
